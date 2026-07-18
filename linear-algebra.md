@@ -10,7 +10,7 @@ math:
 A scratch chapter for linear-algebra notes — enough structure to flesh out later, and
 enough variety (numbered equations, a table, admonitions, and interleaved Lean) to show
 the book template in action. The runnable code lives in
-[`LearningLean/LinearAlgebra.lean`](LearningLean/LinearAlgebra.lean).
+[`LearningLean/LinearAlgebra.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FLinearAlgebra.lean).
 
 ```{note}
 This chapter is a work in progress. Sections marked **To flesh out** are placeholders.

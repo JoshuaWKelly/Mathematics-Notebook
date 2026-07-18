@@ -7,8 +7,8 @@ math:
 # Natural deduction
 
 The Lean proofs for this chapter live in
-[`LearningLean/NaturalDeduction.lean`](LearningLean/NaturalDeduction.lean), inside the
-`Exercises` namespace.
+[`LearningLean/NaturalDeduction.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FNaturalDeduction.lean),
+inside the `Exercises` namespace.
 
 ## 5.5 Reduction to the absurd. $P \Rightarrow Q,\ ¬ Q ⊢ ¬ P$
 

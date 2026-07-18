@@ -31,8 +31,8 @@ library [@mathlib2020].
 
 | In this book | In the code |
 | --- | --- |
-| [Basic syntax](syntax.md) | [`LearningLean/BasicSyntax.lean`](LearningLean/BasicSyntax.lean) |
-| [Natural deduction](natural-deduction.md) | [`LearningLean/NaturalDeduction.lean`](LearningLean/NaturalDeduction.lean) |
-| [Linear algebra](linear-algebra.md) | [`LearningLean/LinearAlgebra.lean`](LearningLean/LinearAlgebra.lean) |
+| [Basic syntax](syntax.md) | [`LearningLean/BasicSyntax.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FBasicSyntax.lean) |
+| [Natural deduction](natural-deduction.md) | [`LearningLean/NaturalDeduction.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FNaturalDeduction.lean) |
+| [Linear algebra](linear-algebra.md) | [`LearningLean/LinearAlgebra.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FLinearAlgebra.lean) |
 
 See the [README](README.md) for how to build the Lean project and how to preview or build this book.

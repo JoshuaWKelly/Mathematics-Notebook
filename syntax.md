@@ -5,7 +5,7 @@ title: Basic Syntax
 # Basic syntax
 
 The runnable version of this chapter lives in
-[`LearningLean/BasicSyntax.lean`](LearningLean/BasicSyntax.lean).
+[`LearningLean/BasicSyntax.lean`](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2Fjoshuawkelly%2FMathematics-Notebook%2Fmain%2FLearningLean%2FBasicSyntax.lean).
 
 ## Comments
 
