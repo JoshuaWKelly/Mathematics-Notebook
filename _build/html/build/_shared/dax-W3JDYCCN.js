@@ -1,1 +1,1 @@
-import{a}from"/build/_shared/chunk-D226TOZI.js";import"/build/_shared/chunk-OZE3FFNP.js";export default a();
+import{a}from"/Mathematics-Notebook/build/_shared/chunk-D226TOZI.js";import"/Mathematics-Notebook/build/_shared/chunk-OZE3FFNP.js";export default a();

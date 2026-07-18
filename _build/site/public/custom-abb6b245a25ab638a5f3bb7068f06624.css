@@ -1,0 +1,18 @@
+/* Use Luciole (installed locally via Font Book) for body text across the site.
+   Setting it on `body` lets it inherit into all prose. We deliberately do NOT
+   touch `.katex` — KaTeX sets font-family explicitly on its own elements, so
+   those rules override this inheritance and math keeps its correct fonts and
+   glyph metrics. (An earlier `.katex { font-family: revert }` broke math.) */
+body {
+  font-family: "Luciole", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Headings, in case the theme assigns them a different family explicitly. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Luciole", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Keep code/monospace on a monospaced stack (also inherits, so re-assert it). */
+code, pre, kbd, samp, tt {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
