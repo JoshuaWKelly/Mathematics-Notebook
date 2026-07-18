@@ -1,0 +1,20 @@
+jtex: v1
+kind: typst
+title: Learning Lean 4 — Book
+description: Minimal Typst book layout with a title page and table of contents.
+template: template.typ
+files:
+  - template.typ
+doc:
+  - id: title
+    required: true
+  - id: subtitle
+  - id: authors
+  - id: date
+parts:
+  - id: abstract
+    required: false
+options:
+  - id: heading_numbering
+    type: string
+    description: Typst heading numbering pattern, e.g. "1.1". Defaults to none.

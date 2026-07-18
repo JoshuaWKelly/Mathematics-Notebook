@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: learning-lean-4-latex.aux
+The style file: abbrvnat.bst
+A level-1 auxiliary file: learning-lean-4-latex-syntax.aux
+A level-1 auxiliary file: learning-lean-4-latex-natural-deduction.aux
+A level-1 auxiliary file: learning-lean-4-latex-linear-algebra.aux
+Database file #1: main.bib
+You've used 1 entry,
+            2773 wiz_defined-function locations,
+            603 strings with 4951 characters,
+and the built_in function-call counts, 568 in all, are:
+= -- 58
+> -- 10
+< -- 2
++ -- 4
+- -- 3
+* -- 32
+:= -- 81
+add.period$ -- 5
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 1
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 54
+format.name$ -- 4
+if$ -- 128
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 14
+num.names$ -- 4
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 34
+swap$ -- 11
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 11
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 23

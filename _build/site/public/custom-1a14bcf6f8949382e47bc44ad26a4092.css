@@ -1,0 +1,19 @@
+/* Use Luciole (installed locally via Font Book) for body text across the site.
+   Falls back to the theme defaults if the font is not available in the browser. */
+:root {
+  --font-family-base: "Luciole", ui-sans-serif, system-ui, sans-serif;
+  --font-family-heading: "Luciole", ui-sans-serif, system-ui, sans-serif;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, div,
+button, input, select, textarea {
+  font-family: "Luciole", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Keep code/monospace as the theme's monospaced stack. */
+code, pre, kbd, samp, tt,
+.hljs, .cm-editor, [class*="language-"] {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}

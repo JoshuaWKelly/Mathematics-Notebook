@@ -1,0 +1,50 @@
+% Created with jtex v.1.0.21
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%  imports  %%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{framed}
+\usepackage{url}
+%%%%%%%%%%%%%%%%%  math commands  %%%%%%%%%%%%%%%%
+\newcommand{\R}{\Rightarrow}
+\newcommand{\vec}[1]{\mathbf{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% colors for hyperlinks
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\newcommand{\logo}{
+  \href{https://curvenote.com}{\includegraphics[width=2cm]{curvenote.png}}
+}
+
+\title{Learning Lean 4}
+
+\author{Joshua W. Kelly}
+
+\newdate{articleDate}{18}{7}{2026}
+\date{\displaydate{articleDate}}
+
+\begin{document}
+\maketitle
+\begin{center}\logo\end{center}
+
+
+\include{learning-lean-4-latex-syntax}
+
+\include{learning-lean-4-latex-natural-deduction}
+
+\include{learning-lean-4-latex-linear-algebra}
+
+
+
+
+\bibliography{main.bib}
+\end{document}

@@ -1,0 +1,39 @@
+version: 1
+project:
+  title: Learning Lean 4
+  description: Notes and worked exercises from learning the Lean 4 theorem prover.
+  abstract: |
+    Working notes and exercises from learning the Lean 4 theorem prover, following
+    *An Introduction to Lean 4* by Cosme Llópez and Gong. Covers basic syntax and
+    natural-deduction proofs, paired with a runnable Lean library.
+  authors:
+    - name: Joshua W. Kelly
+      email: jkelly@verusinstitute.org
+      orcid: 0009-0004-7363-4837
+      affiliations:
+        - Verus Institute
+        - Arizona State University
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  math:
+    '\R': '\Rightarrow'
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf                              # PDF via the LaTeX engine (tectonic)
+      output: exports/learning-lean-4-latex.pdf
+    - format: typst                            # PDF via the Typst engine
+      template: templates/typst-book           # custom layout: title page + TOC
+      output: exports/learning-lean-4-typst.pdf
+  toc:
+    - file: index.md
+    - file: foundations.md
+    - file: syntax.md
+    - file: natural-deduction.md
+    - file: linear-algebra.md
+site:
+  template: book-theme
+  options:
+    style: ./styles/custom.css
+    numbered_references: true

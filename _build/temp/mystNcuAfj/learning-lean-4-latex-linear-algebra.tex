@@ -1,0 +1,114 @@
+\section{Linear Algebra}
+
+\subsection{Linear algebra}
+
+A scratch chapter for linear-algebra notes --- enough structure to flesh out later, and
+enough variety (numbered equations, a table, admonitions, and interleaved Lean) to show
+the book template in action. The runnable code lives in
+\href{/LinearAlgebra-21b7e76089afe77d1ab624eef2fc49b2.lean}{\texttt{LearningLean/LinearAlgebra.lean}}.
+
+\begin{framed}
+\textbf{Note}\\
+This chapter is a work in progress. Sections marked \textbf{To flesh out} are placeholders.
+\end{framed}
+
+\subsubsection{Vectors}
+
+A vector in $\R^n$ is an ordered list of $n$ real numbers. We write column vectors as
+$\vec{u} = (u_1, \dots, u_n)$ with each $u_i \in \R$.
+
+The \textbf{dot product} of $\vec{u}, \vec{v} \in \R^n$ is the scalar
+
+\begin{equation}
+\label{eq-dot}
+\vec{u} \cdot \vec{v} = \sum_{i=1}^{n} u_i\, v_i .
+\end{equation}
+
+For a concrete computation, take $\vec{u} = (1, 2, 3)$ and $\vec{v} = (4, 5, 6)$. Then by
+equation (\ref{eq-dot}),
+
+\begin{equation}
+\vec{u} \cdot \vec{v} = 1\cdot 4 + 2\cdot 5 + 3\cdot 6 = 32 .
+\end{equation}
+
+In Lean, a vector is a function \texttt{Fin n \rightarrow ℝ}, and \texttt{![\dots]} is notation for one. The dot product and
+the matrix operations below follow the spellings used in Mathlib \citep{mathlib2020}:\footnote{Mathlib writes the dot product as \texttt{⬝ᵥ} (\texttt{{\textbackslash}cdotv}) rather than reusing \texttt{·}, to keep
+it distinct from scalar multiplication.}
+
+\begin{verbatim}
+def u : Fin 3 \rightarrow ℝ := ![1, 2, 3]
+def v : Fin 3 \rightarrow ℝ := ![4, 5, 6]
+
+#check u ⬝ᵥ v      - - `⬝ᵥ` is Mathlib's dot product, of type ℝ
+\end{verbatim}
+
+\subsubsection{Matrices}
+
+An $m \times n$ matrix $A \in \R^{m \times n}$ is a rectangular array of scalars. For example,
+
+\begin{equation}
+A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \in \R^{2 \times 2}.
+\end{equation}
+
+The \textbf{matrix--vector product} $A\vec{x}$ takes a vector $\vec{x} \in \R^n$ to a vector in
+$\R^m$. With $\vec{x} = (5, 6)$:
+
+\begin{equation}
+A\vec{x}
+= \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}\begin{bmatrix} 5 \\ 6 \end{bmatrix}
+= \begin{bmatrix} 1\cdot 5 + 2\cdot 6 \\ 3\cdot 5 + 4\cdot 6 \end{bmatrix}
+= \begin{bmatrix} 17 \\ 39 \end{bmatrix}.
+\end{equation}
+
+A few operations and their Mathlib spellings:
+
+\bigskip\noindent
+\begin{tabular}{p{\dimexpr 0.333\linewidth-2\tabcolsep}p{\dimexpr 0.333\linewidth-2\tabcolsep}p{\dimexpr 0.333\linewidth-2\tabcolsep}}
+\toprule
+Operation & Math & Lean / Mathlib \\
+\hline
+Dot product & $\vec{u} \cdot \vec{v}$ & \texttt{u ⬝ᵥ v} \\
+Matrix--vector product & $A\vec{x}$ & \texttt{A *ᵥ x} \\
+Matrix product & $AB$ & \texttt{A * B} \\
+Transpose & $A^\top$ & \texttt{Aᵀ} \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+
+\begin{verbatim}
+def A : Matrix (Fin 2) (Fin 2) ℝ := !![1, 2; 3, 4]
+
+#check A *ᵥ ![5, 6]   - - matrix -vector product, of type `Fin 2 \rightarrow ℝ`
+\end{verbatim}
+
+\subsubsection{Linear maps}
+
+A \textbf{linear map} $T : \R^n \to \R^m$ is a function satisfying
+$T(\alpha\vec{u} + \vec{v}) = \alpha\,T(\vec{u}) + T(\vec{v})$ for all scalars $\alpha$ and
+vectors $\vec{u}, \vec{v}$. Every such map is represented by a matrix, and matrix
+multiplication corresponds to composition of the maps.
+
+\begin{framed}
+\textbf{Note}\\
+\textbf{To flesh out:} state and prove that \texttt{Matrix.mulVec A} is a \texttt{LinearMap}, and connect it to
+\texttt{Matrix.toLin}.
+\end{framed}
+
+\subsubsection{A worked computation}
+
+\textbf{To flesh out.} A step-by-step example --- e.g. solving $A\vec{x} = \vec{b}$ by row
+reduction --- narrated alongside the corresponding Lean definitions, so the computation and its
+formalization sit side by side.
+
+\subsubsection{Exercises}
+
+\begin{framed}
+\textbf{Note}\\
+\textbf{To flesh out.} Add exercises here, e.g.:
+
+\begin{enumerate}
+\item Show the dot product is symmetric: $\vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}$.
+\item Prove $(A^\top)^\top = A$ in Lean using \texttt{Matrix.transpose\_transpose}.
+\end{enumerate}
+\end{framed}

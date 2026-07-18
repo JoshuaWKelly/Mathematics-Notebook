@@ -1,0 +1,52 @@
+\section{Basic Syntax}
+
+\subsection{Basic syntax}
+
+The runnable version of this chapter lives in
+\href{/BasicSyntax-17b3beb7abc501549129aaa1412511b4.lean}{\texttt{LearningLean/BasicSyntax.lean}}.
+
+\subsubsection{Comments}
+
+\begin{verbatim}
+- - This is a single -line comment.
+
+/ -
+This is a multi -line comment.
+Here is another line.
+ -/
+\end{verbatim}
+
+\subsubsection{Inspecting terms and types with \texttt{\#check}}
+
+\texttt{\#check} asks Lean for the type of an expression without evaluating it.
+
+\begin{verbatim}
+#check true          - - Bool
+#check 42            - - Nat
+#check "Hello, World!" - - String
+#check Type          - - Type 1
+#check Nat           - - Type
+#check ['h', 'e', 'l', 'l', 'o'] - - List Char
+\end{verbatim}
+
+\subsubsection{Printing definitions with \texttt{\#print}}
+
+\texttt{\#print} shows how something is defined.
+
+\begin{verbatim}
+#print Bool
+\end{verbatim}
+
+\texttt{Type} itself cannot be printed with \texttt{\#print}, because it is a type rather than a
+definition.
+
+\subsubsection{Definitions and functions}
+
+\begin{verbatim}
+def pi : Float := 3.1415926
+
+#check pi
+
+ - - An anonymous function (lambda) taking two natural numbers.
+#check \lambda (a b : Nat) => a + b
+\end{verbatim}

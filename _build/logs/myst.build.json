@@ -1,0 +1,59 @@
+{
+  "input": {
+    "files": [],
+    "opts": {
+      "execute": false,
+      "executeParallel": 11,
+      "pdf": false,
+      "tex": false,
+      "typst": true,
+      "docx": false,
+      "md": false,
+      "xml": false,
+      "meca": false,
+      "cff": false,
+      "site": false,
+      "html": false,
+      "all": false,
+      "doiBib": false,
+      "watch": false,
+      "force": false,
+      "checkLinks": false,
+      "strict": false,
+      "ci": false,
+      "maxSizeWebp": 1572864,
+      "keepHost": false
+    }
+  },
+  "exports": [
+    {
+      "format": "typst",
+      "template": "/Users/joshuaw.kelly/Desktop/lean-test/templates/typst-book",
+      "output": "/Users/joshuaw.kelly/Desktop/lean-test/exports/learning-lean-4-typst.pdf",
+      "articles": [
+        {
+          "file": "/Users/joshuaw.kelly/Desktop/lean-test/foundations.md",
+          "level": 1,
+          "slug": "foundations"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Desktop/lean-test/syntax.md",
+          "level": 1,
+          "slug": "syntax"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Desktop/lean-test/natural-deduction.md",
+          "level": 1,
+          "slug": "natural-deduction"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Desktop/lean-test/linear-algebra.md",
+          "level": 1,
+          "slug": "linear-algebra"
+        }
+      ],
+      "$file": "/Users/joshuaw.kelly/Desktop/lean-test/myst.yml",
+      "$project": "/Users/joshuaw.kelly/Desktop/lean-test"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+Rc files read:
+  NONE
+Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'xelatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -file-line-error -shell-escape -recorder  "learning-lean-4-latex.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on learning-lean-4-latex.synctex.gz.Latexmk: Missing bbl file 'learning-lean-4-latex.bbl' in following:
+ No file learning-lean-4-latex.bbl.
+Latexmk: Important warning:
+  (\end occurred inside a group at level 2)
+Latexmk: Getting log file 'learning-lean-4-latex.log'
+Latexmk: Examining 'learning-lean-4-latex.fls'
+Latexmk: Examining 'learning-lean-4-latex.log'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'learning-lean-4-latex.xdv'
+Latexmk: Found bibliography file(s):
+  ./main.bib
+Latexmk: applying rule 'bibtex learning-lean-4-latex'...
+Rule 'bibtex learning-lean-4-latex':  Reasons for rerun
+Category 'other':
+  Rerun of 'bibtex learning-lean-4-latex' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'bibtex learning-lean-4-latex'
+------------
+------------
+Running 'bibtex  "learning-lean-4-latex.aux"'
+------------
+This is BibTeX, Version 0.99d (TeX Live 2024)
+The top-level auxiliary file: learning-lean-4-latex.aux
+The style file: abbrvnat.bst
+Database file #1: main.bib
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  learning-lean-4-latex-linear-algebra.aux
+  learning-lean-4-latex-natural-deduction.aux
+  learning-lean-4-latex-syntax.aux
+  learning-lean-4-latex.aux
+  learning-lean-4-latex.bbl
+  learning-lean-4-latex.out
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -file-line-error -shell-escape -recorder  "learning-lean-4-latex.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on learning-lean-4-latex.synctex.gz.Latexmk: Important warning:
+  (\end occurred inside a group at level 2)
+Latexmk: Getting log file 'learning-lean-4-latex.log'
+Latexmk: Examining 'learning-lean-4-latex.fls'
+Latexmk: Examining 'learning-lean-4-latex.log'
+Latexmk: Found input bbl file 'learning-lean-4-latex.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'learning-lean-4-latex.xdv'
+Latexmk: Found bibliography file(s):
+  ./main.bib
+Latexmk: applying rule 'bibtex learning-lean-4-latex'...
+Rule 'bibtex learning-lean-4-latex':  Reasons for rerun
+Changed files or newly in use/created:
+  learning-lean-4-latex.aux
+
+------------
+Run number 2 of rule 'bibtex learning-lean-4-latex'
+------------
+------------
+Running 'bibtex  "learning-lean-4-latex.aux"'
+------------
+This is BibTeX, Version 0.99d (TeX Live 2024)
+The top-level auxiliary file: learning-lean-4-latex.aux
+The style file: abbrvnat.bst
+Database file #1: main.bib
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  learning-lean-4-latex.aux
+
+------------
+Run number 3 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -file-line-error -shell-escape -recorder  "learning-lean-4-latex.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on learning-lean-4-latex.synctex.gz.Latexmk: Important warning:
+  (\end occurred inside a group at level 2)
+Latexmk: Getting log file 'learning-lean-4-latex.log'
+Latexmk: Examining 'learning-lean-4-latex.fls'
+Latexmk: Examining 'learning-lean-4-latex.log'
+Latexmk: Found input bbl file 'learning-lean-4-latex.bbl'
+Latexmk: Log file says output to 'learning-lean-4-latex.xdv'
+Latexmk: Found bibliography file(s):
+  ./main.bib
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  learning-lean-4-latex.xdv
+Category 'changed_source_rules':
+  xelatex
+Category 'no_dest':
+  xdvipdfmx
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "learning-lean-4-latex.pdf"  "learning-lean-4-latex.xdv"'
+------------
+learning-lean-4-latex.xdv -> learning-lean-4-latex.pdf
+[1][2][3Error: /syntaxerror in /----nostringval----
+Operand stack:
+Execution stack:   %interp_exit   .runexec2   --nostringval--   --nostringval--   --nostringval--   2   %stopped_push   --nostringval--   --nostringval--   --nostringval--   false   1   %stopped_push   1933   1   3   %oparray_pop   1932   1   3   %oparray_pop   1917   1   3   %oparray_pop   1787   1   3   %oparray_pop   --nostringval--   %errorexec_pop   .runexec2   --nostringval--   --nostringval--   --nostringval--   2   %stopped_push
+Dictionary stack:   --dict:753/1123(ro)(G)--   --dict:0/20(G)--   --dict:85/200(L)--
+Current allocation mode is local
+GPL Ghostscript 10.03.0: Unrecoverable error, exit code 1
+
+xdvipdfmx:warning: Filtering file via command -->rungs -q -dSAFER -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -sOutputFile='/var/folders/z2/rq5nfkkn4_j9mb1wbh7ww04h0000gn/T/dvipdfm-x.8d54dad028ea6ea6f0846c505cbcdf22' './files/fitch-b1b30d3bae99cd633d830976f12fffdb.svg' -c quit<-- failed.
+xdvipdfmx:warning: Image format conversion for "./files/fitch-b1b30d3bae99cd633d830976f12fffdb.svg" failed...
+xdvipdfmx:fatal: pdf_link_obj(): passed invalid object.
+
+No output PDF file written.
+Latexmk: ====Undefined refs and citations with line #s in .tex file:
+  Missing character: There is no ¬ ("AC) in font cmr10!
+  Missing character: There is no ⊢ ("22A2) in font cmr10!
+  Missing character: There is no ¬ ("AC) in font cmr10!
+  Missing character: There is no ¬ ("AC) in font cmr10!
+  Missing character: There is no ⊢ ("22A2) in font cmr10!
+  Missing character: There is no ¬ ("AC) in font cmr10!
+  Missing character: There is no ¬ ("AC) in font cmr10!
+ And 28 more --- see log file 'learning-lean-4-latex.log'
+Latexmk: Summary of warnings from last run of *latex:
+  =====Latex reported missing or unavailable character(s).
+=====See log file for details.
+Latexmk: Errors, in force_mode: so I tried finishing targets
+Collected error summary (may duplicate other messages):
+  xdvipdfmx: Command for 'xdvipdfmx' gave return code 256
+  xelatex: Command for 'xelatex' gave return code 1
+      Refer to 'learning-lean-4-latex.log' and/or above output for details
+
