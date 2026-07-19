@@ -6,9 +6,9 @@
       "executeParallel": 11,
       "pdf": false,
       "tex": false,
-      "typst": false,
-      "docx": true,
-      "md": true,
+      "typst": true,
+      "docx": false,
+      "md": false,
       "xml": false,
       "meca": false,
       "cff": false,
@@ -27,26 +27,34 @@
   },
   "exports": [
     {
-      "format": "docx",
-      "output": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/exports/learning-lean-4.docx",
+      "format": "typst",
+      "template": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/templates/typst-book",
+      "output": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/exports/learning-lean-4-typst.pdf",
       "articles": [
         {
           "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/foundations.md",
           "level": 1,
           "slug": "foundations"
-        }
-      ],
-      "$file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/myst.yml",
-      "$project": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook"
-    },
-    {
-      "format": "md",
-      "output": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/exports/learning-lean-4.md",
-      "articles": [
+        },
         {
-          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/foundations.md",
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/syntax.md",
           "level": 1,
-          "slug": "foundations"
+          "slug": "syntax"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/natural-deduction.md",
+          "level": 1,
+          "slug": "natural-deduction"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/linear-algebra.md",
+          "level": 1,
+          "slug": "linear-algebra"
+        },
+        {
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/accessibility.md",
+          "level": 1,
+          "slug": "accessibility"
         }
       ],
       "$file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/myst.yml",
