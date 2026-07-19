@@ -6,9 +6,9 @@
       "executeParallel": 11,
       "pdf": false,
       "tex": false,
-      "typst": true,
-      "docx": false,
-      "md": false,
+      "typst": false,
+      "docx": true,
+      "md": true,
       "xml": false,
       "meca": false,
       "cff": false,
@@ -27,33 +27,30 @@
   },
   "exports": [
     {
-      "format": "typst",
-      "template": "/Users/joshuaw.kelly/Desktop/lean-test/templates/typst-book",
-      "output": "/Users/joshuaw.kelly/Desktop/lean-test/exports/learning-lean-4-typst.pdf",
+      "format": "docx",
+      "output": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/exports/learning-lean-4.docx",
       "articles": [
         {
-          "file": "/Users/joshuaw.kelly/Desktop/lean-test/foundations.md",
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/foundations.md",
           "level": 1,
           "slug": "foundations"
-        },
-        {
-          "file": "/Users/joshuaw.kelly/Desktop/lean-test/syntax.md",
-          "level": 1,
-          "slug": "syntax"
-        },
-        {
-          "file": "/Users/joshuaw.kelly/Desktop/lean-test/natural-deduction.md",
-          "level": 1,
-          "slug": "natural-deduction"
-        },
-        {
-          "file": "/Users/joshuaw.kelly/Desktop/lean-test/linear-algebra.md",
-          "level": 1,
-          "slug": "linear-algebra"
         }
       ],
-      "$file": "/Users/joshuaw.kelly/Desktop/lean-test/myst.yml",
-      "$project": "/Users/joshuaw.kelly/Desktop/lean-test"
+      "$file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/myst.yml",
+      "$project": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook"
+    },
+    {
+      "format": "md",
+      "output": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/exports/learning-lean-4.md",
+      "articles": [
+        {
+          "file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/foundations.md",
+          "level": 1,
+          "slug": "foundations"
+        }
+      ],
+      "$file": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook/myst.yml",
+      "$project": "/Users/joshuaw.kelly/Documents/GitHub/Mathematics-Notebook"
     }
   ]
 }

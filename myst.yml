@@ -26,12 +26,17 @@ project:
     - format: typst                            # PDF via the Typst engine
       template: templates/typst-book           # custom layout: title page + TOC
       output: exports/learning-lean-4-typst.pdf
+    - format: docx                             # Word document for editing / assistive tools
+      output: exports/learning-lean-4.docx
+    - format: md                               # portable Markdown source
+      output: exports/learning-lean-4.md
   toc:
     - file: index.md
     - file: foundations.md
     - file: syntax.md
     - file: natural-deduction.md
     - file: linear-algebra.md
+    - file: accessibility.md
 site:
   template: book-theme
   options:
